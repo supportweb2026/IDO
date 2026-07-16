@@ -1,0 +1,6 @@
+name = "jarvis-ai-company"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Le token GitHub est injecté comme SECRET (jamais committé).
+# Ajoute-le avec : wrangler pages secret put GITHUB_TOKEN --project-name=jarvis-ai-company
