@@ -2,7 +2,7 @@
 // Les prompts système complets vivent côté serveur (functions/api/chat.ts)
 // pour ne pas les exposer au client.
 
-export type AgentId = 'manager' | 'leaddev' | 'dev' | 'devops' | 'security'
+export type AgentId = 'jarvis' | 'manager' | 'leaddev' | 'dev' | 'devops' | 'security'
 
 export interface Agent {
   id: AgentId
@@ -14,6 +14,14 @@ export interface Agent {
 }
 
 export const AGENTS: Agent[] = [
+  {
+    id: 'jarvis',
+    name: 'Jarvis',
+    emoji: '🤖',
+    role: 'PDG — CEO',
+    blurb: 'Vision globale de tous tes repos, décide et orchestre l’équipe.',
+    color: '#f59e0b',
+  },
   {
     id: 'manager',
     name: 'Manager',
